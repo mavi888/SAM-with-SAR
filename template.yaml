@@ -18,3 +18,13 @@ Resources:
           Properties:
             Path: /hello
             Method: get
+  S3LambdaSaveDynamodb:
+    Type: AWS::Serverless::Application
+    Properties:
+      Location:
+        ApplicationId: arn:aws:serverlessrepo:us-east-1:375983427419:applications/s3-lambda-save-dynamodb
+        SemanticVersion: 0.0.1
+      Parameters: 
+        # (Required) The name of the new DynamoDB table you want to create and save to. Minimum 3 characters
+        TableName: 'samWithSARTable' 
+      
