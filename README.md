@@ -2,25 +2,24 @@
 
 1. Build SAM project
 
-´´´
+```
 sam build --region <your region>
-´´´
+```
 
 Example
-´´´
+```
 sam build --region us-east-1
-´´´
+```
 
 2. Create a S3 bucket. Only to do the first time you package this project
-
-´´´´
+```
 aws s3api create-bucket --bucket <name of bucket> --region <your region>
-´´´´
+```
 
 Example:
-´´´´
+```
 aws s3api create-bucket --bucket learning-serverless-sam-with-sar --region us-east-1
-´´´´
+```
 
 3. Package project
 
